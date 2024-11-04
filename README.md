@@ -67,7 +67,20 @@ when $|\frac{\lambda_{i}}{\lambda_{1}}| < 1$
 # Complexity 
 
 ## Google Matrix $G$
-...
+
+$G = \alpha S + \left(1-\alpha \right) V$
+Properties: 
+1. $G$ has eigenvalue $1$ (stochastic)
+2. Spectral radius $1$ unique (primitive)
+3. $G$ is usually a sparse
+
+
+Unique left eigenvector: $G b = b$, $b>0$ and $||b|| = 1$
+
+$i$-th entry of $b$: PageRank of page $i$
+
+PageRank = largest left eigenvector of $G$
+
 
 ## Use ```numpy.linalg.eig```
 Depends on size of $G$, typically costing $O\left(n^{3}\right)$ for dense matrix, but *Google Page Rank matrix* is generally sparse.
