@@ -41,19 +41,19 @@ Therefor $x^{T} y = 0 $. With full linear independent eigenvectors $Q$ is orthog
 
 Every $m \times n$ matrix $A$ has the factorization $A = U \Lambda V^{T}$
 
-with $A A{T} = U \Lambda_{U} U^{T}$ and $A{T} A = V \Lambda_{V} V^{T} $ and $A A^{T}$ and $A^{T} A$ have same non-zero eigenvalues.
+with $A A^{T}=U \Lambda_{u} U^{T}$ and $A^{T} A=V \Lambda_{v} V^{T}$ and $A A^{T}$ and $A^{T} A$ have same non-zero eigenvalues.
 
 **Proof**
 
 Suppose $\lambda_{0}, X_{0}$ are eigenvalue, eigenvector of  $AA^{T}$ 
 
-$AA^{T}X_{0} = \lambda_{0}X_{0}$ $\Leftrightarrow$ $A^{T}A(A^{T}X_{0}) = \lambda_{0}(A^{T}X_{0})$ with $\lambda_{0} \neq 0$: $\lambda_{0}$ is also the eigenvalue of $A^{T}A$
+$A A^{T}X_{0} = \lambda_{0} X_{0}$ $\Leftrightarrow$ $A^{T} A (A^{T} X_{0}) = \lambda_{0}(A^{T} X_{0})$ with $\lambda_{0} \neq 0$: $\lambda_{0}$ is also the eigenvalue of $A^{T}A$
 
 
 # Power Iteration method
 The algorithm with return the greatest $\lambda$ (in absolute value) and a non zero vector $v$ which $A v = \lambda v$.
 
-Start with $random b_{0}$, at every iteration:
+Start with random $b_{0}$, at every iteration:
 
 $b_{k+1} = \frac{A b_{k}}{||A b_{k}||} = \frac{A^{k+1} b_{0}}{||A^{k+1} b_{0}||}$
 
