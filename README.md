@@ -19,7 +19,9 @@ Notice: $X$ is invertible because we assumped that A has $n$ linear independent 
 2. Eigenvectors can be chosen *orthonormal*
 
 **Spectral Theorem** Every symmetric matrix S has the factorization $S = Q\Lambda Q^{T}$ with real eigenvalues in $\Lambda$ and orthonormal eigenvectors in $Col(Q)$.
+
 **Proof 1**
+
 Suppose $\lambda = a+ib$ we have: 
 
 $Sx=\lambda x \Rightarrow \bar x^{T} Sx=\bar x^{T} \lambda x$ and $S \bar x=\bar\lambda \bar x \Rightarrow \bar x^{T} S=\bar x^{T} \bar\lambda \Rightarrow \bar x^{T} S x=\bar x^{T} \bar\lambda x$
@@ -27,6 +29,7 @@ $Sx=\lambda x \Rightarrow \bar x^{T} Sx=\bar x^{T} \lambda x$ and $S \bar x=\bar
 Since $\bar x^{T} x \geq 0 \Rightarrow \lambda = \bar \lambda = a$ is real.
 
 **Proof 2**
+
 Suppose $S x = \lambda_{1} x$, $S y = \lambda_{2} y$ and $\lambda_{1} \neq \lambda_{2}$ we have:
 
 $(\lambda_{1} x)^{T} y = (S x)^{T} y = x^{T} S y = x^{T} (\lambda_{2} y)$ ($S$ is symmetric).
@@ -41,6 +44,7 @@ Every $m \times n$ matrix $A$ has the factorization $A = U \Lambda V^{T}$
 with $A A{T} = U \Lambda_{U} U^{T}$ and $A{T} A = V \Lambda_{V} V^{T} $ and $A A^{T}$ and $A^{T} A$ have same non-zero eigenvalues.
 
 **Proof**
+
 Suppose $\lambda_{0}, X_{0}$ are eigenvalue, eigenvector of  $AA^{T}$ 
 
 $AA^{T}X_{0} = \lambda_{0}X_{0}$ $\Leftrightarrow$ $A^{T}A(A^{T}X_{0}) = \lambda_{0}(A^{T}X_{0})$ with $\lambda_{0} \neq 0$: $\lambda_{0}$ is also the eigenvalue of $A^{T}A$
