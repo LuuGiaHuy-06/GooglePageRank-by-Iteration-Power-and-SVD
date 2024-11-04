@@ -74,7 +74,10 @@ Per iteration cost: $O\left(n^{2}\right)$ and usually stops before $k$ reachs $n
 But the algorithm usually works efficient for sparse matrix, and return the domination eigenvalue/eigenvector (if it exists).
 
 
+# References
+[1] Gilbert Strang, *Introduction to Linear Algebra*; 5th edition.
 
+[2] Wikipedia, *https://en.wikipedia.org/wiki/Power_iteration*.
 
 
 
